@@ -29,8 +29,8 @@ Ein Programm zum einfachen Erstellen und Editieren von Chord-Looper Daten und B�
   - Mit der rechten Maustaste wird ein Akkord gelöscht.
 
 - Chords: Im türkisen Bereich wird die Akkord-Sequenz festgelegt.
-  - Mit der linken Maustaste werden Akkorde geschrieben.
-  - Mit der rechten Maustaste werden Akkorde gelöscht.
+  - Mit der linken Maustaste wird ein Akkord geschrieben.
+  - Mit der rechten Maustaste wird ein Akkord gelöscht.
   - Mit der mittleren Maustaste wird die Länge der Sequenz festgelegt.
 
 - Mit [Escape] kann das Programm beendet werden.
