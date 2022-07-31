@@ -35,9 +35,6 @@ namespace YGCLE
 
 			this.label_bank.BackColor = Color.FromArgb(191, 127, 127);
 
-			this.checkBox_bank_autoget.BackColor = Color.FromArgb(255, 127, 127);
-			this.checkBox_bank_autoset.BackColor = Color.FromArgb(255, 127, 127);
-
 			this.label_file.BackColor = Color.FromArgb(191, 191, 127);
 			this.label_pitch.BackColor = Color.FromArgb(191, 191, 127);
 			this.label_length.BackColor = Color.FromArgb(191, 191, 127);
@@ -144,14 +141,11 @@ namespace YGCLE
 								}
 							}
 						}
-
-						if (this.checkBox_bank_autoset.Checked) { button_bank_set_Click(this, EventArgs.Empty); }
 					}
 					else if (e.Button == MouseButtons.Right)
 					{
 						this.ChordGridData[Index] = null;
 						this.ChordGridLabel[Index].Text = "";
-						if (this.checkBox_bank_autoset.Checked) { button_bank_set_Click(this, EventArgs.Empty); }
 					}
 					else if (e.Button == MouseButtons.Middle)
 					{
@@ -169,8 +163,6 @@ namespace YGCLE
 								if (I2 <= Index) { this.ChordGridLabel[I2].BackColor = this.Selection2; }
 							}
 						}
-
-						if (this.checkBox_bank_autoset.Checked) { button_bank_set_Click(this, EventArgs.Empty); }
 					}
 				};
 
@@ -267,9 +259,10 @@ namespace YGCLE
 			if (this.textBox_presetname.Text.Equals("")) { return; }
 
 			GuiToCld();
-			this.TheCLB.CldArray[Index] = this.TheCLD;
 
+			this.TheCLB.CldArray[Index] = this.TheCLD;
 			this.TheCLB.Filename[Index] = this.textBox_presetname.Text;
+
 			this.listBox_bank.Items[Index] = this.textBox_presetname.Text;
 		}
 		public void button_bank_delete_Click(object sender, EventArgs e)
@@ -382,11 +375,6 @@ namespace YGCLE
 			ChordGridToGui();
 		}
 
-		public void listBox_bank_SelectedIndexChanged(object sender, EventArgs e)
-		{
-			if (this.checkBox_bank_autoget.Checked) { button_bank_get_Click(this, EventArgs.Empty); }
-		}
-
 		public int GetPitch(int Value1, int Value2)
 		{
 			int Result = 0;
@@ -437,11 +425,7 @@ namespace YGCLE
 		}
 		public void CldToGui()
 		{
-			if (this.TheCLD.TheData.Length == 0)
-			{
-				this.Length = 1;
-				return;
-			}
+			if (this.TheCLD.TheData == null) { return; }
 
 			int Position = 0;
 			for (int I = 0; I < this.TheCLD.TheData.Length; I++)

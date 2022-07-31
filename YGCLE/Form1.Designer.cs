@@ -53,8 +53,6 @@ namespace YGCLE
 			this.label_pitch = new System.Windows.Forms.Label();
 			this.button_pitch_up = new System.Windows.Forms.Button();
 			this.comboBox_file_option = new System.Windows.Forms.ComboBox();
-			this.checkBox_bank_autoget = new System.Windows.Forms.CheckBox();
-			this.checkBox_bank_autoset = new System.Windows.Forms.CheckBox();
 			this.SuspendLayout();
 			// 
 			// listBox_notehi
@@ -255,7 +253,6 @@ namespace YGCLE
 			this.listBox_bank.Name = "listBox_bank";
 			this.listBox_bank.Size = new System.Drawing.Size(190, 140);
 			this.listBox_bank.TabIndex = 0;
-			this.listBox_bank.SelectedIndexChanged += new System.EventHandler(this.listBox_bank_SelectedIndexChanged);
 			// 
 			// button_bank_get
 			// 
@@ -366,32 +363,10 @@ namespace YGCLE
 			this.comboBox_file_option.Size = new System.Drawing.Size(40, 24);
 			this.comboBox_file_option.TabIndex = 5;
 			// 
-			// checkBox_bank_autoget
-			// 
-			this.checkBox_bank_autoget.Location = new System.Drawing.Point(100, 210);
-			this.checkBox_bank_autoget.Name = "checkBox_bank_autoget";
-			this.checkBox_bank_autoget.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-			this.checkBox_bank_autoget.Size = new System.Drawing.Size(90, 20);
-			this.checkBox_bank_autoget.TabIndex = 6;
-			this.checkBox_bank_autoget.Text = "Auto Get";
-			this.checkBox_bank_autoget.UseVisualStyleBackColor = true;
-			// 
-			// checkBox_bank_autoset
-			// 
-			this.checkBox_bank_autoset.Location = new System.Drawing.Point(200, 210);
-			this.checkBox_bank_autoset.Name = "checkBox_bank_autoset";
-			this.checkBox_bank_autoset.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-			this.checkBox_bank_autoset.Size = new System.Drawing.Size(90, 20);
-			this.checkBox_bank_autoset.TabIndex = 6;
-			this.checkBox_bank_autoset.Text = "Auto Set";
-			this.checkBox_bank_autoset.UseVisualStyleBackColor = true;
-			// 
 			// Form1
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.ClientSize = new System.Drawing.Size(1140, 520);
-			this.Controls.Add(this.checkBox_bank_autoset);
-			this.Controls.Add(this.checkBox_bank_autoget);
 			this.Controls.Add(this.comboBox_file_option);
 			this.Controls.Add(this.button_pitch_up);
 			this.Controls.Add(this.button_pitch_down);
@@ -457,8 +432,6 @@ namespace YGCLE
 		private System.Windows.Forms.Label label_pitch;
 		private System.Windows.Forms.Button button_pitch_up;
 		private System.Windows.Forms.ComboBox comboBox_file_option;
-		private System.Windows.Forms.CheckBox checkBox_bank_autoget;
-		private System.Windows.Forms.CheckBox checkBox_bank_autoset;
 	}
 }
 
