@@ -8,9 +8,9 @@ Ein Programm zum einfachen Erstellen und Editieren von Chord-Looper Daten und B√
 
 ### Funktionen:
 - Akkorde werden Quantisiert.
-- BassNote wird mit ChordRoot gleichgesetzt.
 - Transponierungs-Funktion.
 - Begrenzung auf 128 Beats.
+- BassNote wird mit ChordRoot gleichgesetzt.
 - Typ 3 Akkorde werden nicht unterst√ºtzt.
 
 ### Bedienung:
