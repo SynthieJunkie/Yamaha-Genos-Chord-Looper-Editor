@@ -151,6 +151,7 @@ namespace YGCLE
 					{
 						this.ChordGridData[Index] = null;
 						this.ChordGridLabel[Index].Text = "";
+						if (this.checkBox_bank_autoset.Checked) { button_bank_set_Click(this, EventArgs.Empty); }
 					}
 					else if (e.Button == MouseButtons.Middle)
 					{
@@ -168,6 +169,8 @@ namespace YGCLE
 								if (I2 <= Index) { this.ChordGridLabel[I2].BackColor = this.Selection2; }
 							}
 						}
+
+						if (this.checkBox_bank_autoset.Checked) { button_bank_set_Click(this, EventArgs.Empty); }
 					}
 				};
 
