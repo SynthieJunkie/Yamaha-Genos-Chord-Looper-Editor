@@ -3,6 +3,9 @@
 ### Beschreibung:
 Ein Programm zum einfachen Erstellen und Editieren von Chord-Looper Daten und Bänken für den Yamaha Genos. Getestet mit Firmware v2.11.
 
+### Bild:
+![Screenshot](Screenshot.png)
+
 ### Funktionen:
 - Akkorde werden Quantisiert.
 - BassNote wird mit ChordRoot gleichgesetzt.
