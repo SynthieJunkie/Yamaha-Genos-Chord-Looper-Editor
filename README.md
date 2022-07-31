@@ -19,7 +19,6 @@ Ein Programm zum einfachen Erstellen und Editieren von Chord-Looper Daten und B�
   - Mit [Get <<] werden die Daten des selektierten Eintrags in das Akkord-Gitter geladen.
   - Mit [Set >>] werden die Daten des Akkord-Gitters in einen Bankeintrag geschrieben.
   - Mit [Delete] wird ein Bankeintrag gelöscht.
-  - [Auto Get] und [Auto Set] automatisieren die Funktionen für [Get <<] und [Set >>].
 
 - File: Im gelben Bereich können Chord-Looper-Daten (CLD) verwaltet werden.
   - Chord-Looper-Daten können erstellt, geladen und gespeichert werden.
