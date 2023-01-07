@@ -1,17 +1,14 @@
 # Yamaha-Genos-Chord-Looper-Editor
 
 ### Beschreibung:
-Ein Programm zum einfachen Erstellen und Editieren von Chord-Looper Daten und Bänken für den Yamaha Genos. Getestet mit Firmware v2.11.
+Ein Programm zum einfachen Erstellen und Editieren von Chord-Looper Daten und Bänken für den Yamaha Genos. Getestet mit Firmware v2.13.
 
 ### Bild:
 ![Screenshot](Screenshot.png)
 
 ### Funktionen:
-- Akkorde werden Quantisiert.
+- Akkorde werden auf 1/4 Quantisiert.
 - Transponierungs-Funktion.
-- Begrenzung auf 128 Beats.
-- BassNote wird mit ChordRoot gleichgesetzt.
-- Typ 3 Akkorde werden nicht unterstützt.
 
 ### Bedienung:
 - Bank: Im roten bereich können Bänke (CLB) verwaltet werden.
@@ -34,3 +31,9 @@ Ein Programm zum einfachen Erstellen und Editieren von Chord-Looper Daten und B�
   - Mit der mittleren Maustaste wird die Länge der Sequenz festgelegt.
 
 - Mit [Escape] kann das Programm beendet werden.
+
+### Änderungen
+- v1.1
+  - Puffer um 5 vergrößert.
+  - Beim Laden werden alle Akkorde in den Puffer gespeichert.
+  - Eine Auswahl zum Festlegen von Akkorden oder der Länge.
